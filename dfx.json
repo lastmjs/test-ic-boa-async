@@ -1,0 +1,9 @@
+{
+    "canisters": {
+        "boa": {
+            "type": "rust",
+            "package": "boa",
+            "candid": "canisters/boa/src/boa.did"
+        }
+    }
+}
