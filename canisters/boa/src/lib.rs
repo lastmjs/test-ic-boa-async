@@ -9,7 +9,7 @@ async fn rand_bytes() -> String {
     ).unwrap();
 
     let args = context.eval(r#"
-        // Pretend that raw_rand takes an argument, for the sake of
+        // Pretend that raw_rand takes arguments, for the sake of
         // demonstration.
         rawRand("hello", true, 42, function (randBytes) {
           // Do something with randBytes. For now just return it.
