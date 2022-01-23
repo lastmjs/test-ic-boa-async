@@ -12,8 +12,10 @@ async fn rand_bytes() -> String {
         // Pretend that raw_rand takes arguments, for the sake of
         // demonstration.
         rawRand("hello", true, 42, function (randBytes) {
-          // Do something with randBytes. For now just return it.
-          return randBytes;
+          // Do something with randBytes. Since we are converting it to a string
+          // for convenience in this demo, add a prefix message to demonstrate
+          // that we are legitimately going through this JS callback function.
+          return "Random bytes via JS callback: " + randBytes;
         });
     "#).unwrap();
 
