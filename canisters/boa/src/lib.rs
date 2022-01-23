@@ -43,7 +43,7 @@ async fn rand_bytes() -> String {
     let value = context
         .eval(
             format!(
-                "Uint8Array.from({rand_bytes})",
+                "Uint8Array.from({rand_bytes}).toString()",
                 rand_bytes = serde_json::to_string(&rand_bytes).unwrap()
             )
         )
